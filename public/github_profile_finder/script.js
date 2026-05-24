@@ -35,7 +35,14 @@ if (!searchResultsContainer) {
     overflow: hidden;
     border: 1px solid var(--border, #ccc);
   `;
-  form.parentNode.insertBefore(searchResultsContainer, profileCard);
+  if (profileCard && profileCard.parentNode) {
+
+  profileCard.parentNode.insertBefore(
+    searchResultsContainer,
+    profileCard
+  );
+
+}
 }
 
 function updateThemeIcon() {
