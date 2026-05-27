@@ -775,23 +775,6 @@ section {
     padding: 10px 16px;
   }
 
-  .input-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  #task-category {
-    flex: 1;
-  }
-
-  #task {
-    min-width: unset;
-  }
-
-  #submittask {
-    width: 100%;
-  }
-
   .notes {
     width: 100%;
   }
@@ -807,6 +790,25 @@ section {
   .input-panel {
     padding: 16px 18px;
   }
+
+   .input-group {
+    flex-wrap: nowrap; 
+  }
+
+  #task-category {
+    flex: 0 0 140px;
+    min-width: 0; 
+  }
+
+  #task {
+    flex: 1 1 0;
+    min-width: 0; 
+  }
+
+  #submittask {
+    flex-shrink: 0; 
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -872,6 +874,18 @@ section {
 
   .document-item button {
     width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #task-category,
+  #task,
+  #submittask {
+    width: 100%;
+    flex: unset;
   }
 }
 
