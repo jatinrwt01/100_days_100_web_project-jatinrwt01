@@ -956,33 +956,32 @@ main {
 }
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
-
   .navbar {
     justify-content: center;
     gap: 12px;
   }
 
   .input-panel {
-  padding: 16px 18px;
+    padding: 16px 18px;
   }
 
- .input-group {
-  flex-wrap: nowrap;
+  .input-group {
+    flex-wrap: nowrap;
   }
 
- #task-category {
-  flex: 0 0 140px;
-  min-width: 0;
+  #task-category {
+    flex: 0 0 140px;
+    min-width: 0;
   }
 
-#task {
-  flex: 1 1 0;
-  min-width: 0;
-}
+  #task {
+    flex: 1 1 0;
+    min-width: 0;
+  }
 
-#submittask {
-  flex-shrink: 0;
-}
+  #submittask {
+    flex-shrink: 0;
+  }
 
   .note-actions {
     flex-direction: column;
@@ -1007,19 +1006,7 @@ main {
     flex: 1;
     text-align: center;
   }
-
-  .input-group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  #task-category,
-  #task,
-  #submittask {
-    width: 100%;
-    flex: unset;
-  }
-
+}
 
 /* ---------- THEMES ---------- */
 .theme1 {
