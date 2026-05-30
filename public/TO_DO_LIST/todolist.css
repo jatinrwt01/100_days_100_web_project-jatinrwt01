@@ -964,16 +964,16 @@ main {
 
   .input-panel {
   padding: 16px 18px;
-}
+  }
 
-.input-group {
+ .input-group {
   flex-wrap: nowrap;
-}
+  }
 
-#task-category {
+ #task-category {
   flex: 0 0 140px;
   min-width: 0;
-}
+  }
 
 #task {
   flex: 1 1 0;
@@ -1019,7 +1019,7 @@ main {
     width: 100%;
     flex: unset;
   }
-}
+
 
 /* ---------- THEMES ---------- */
 .theme1 {
